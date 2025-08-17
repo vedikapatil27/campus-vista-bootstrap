@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista College - Excellence in Higher Education</title>
+    <meta name="description" content="Vista College offers world-class higher education with comprehensive academic programs, modern facilities, and expert faculty.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-mortarboard-fill text-primary fs-3 me-2"></i>
+                <span class="fw-bold text-primary fs-4">Vista College</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="departments.html">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-slide hero-slide-1">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div class="col-lg-6">
+                                    <div class="hero-content text-white">
+                                        <h1 class="display-4 fw-bold mb-4">Welcome to <span class="text-warning">Vista College</span></h1>
+                                        <p class="fs-5 mb-4">Shaping minds, building futures. Experience world-class education in a vibrant campus community where innovation meets tradition.</p>
+                                        <div class="hero-buttons">
+                                            <a href="courses.html" class="btn btn-warning btn-lg me-3">
+                                                Explore Courses <i class="bi bi-arrow-right"></i>
+                                            </a>
+                                            <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="hero-stats">
+                                        <div class="row g-3">
+                                            <div class="col-md-4">
+                                                <div class="stat-card text-center p-3 bg-white bg-opacity-10 rounded">
+                                                    <i class="bi bi-people-fill text-warning fs-2"></i>
+                                                    <h3 class="text-white mt-2">5,000+</h3>
+                                                    <p class="text-white-50 mb-0">Students</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stat-card text-center p-3 bg-white bg-opacity-10 rounded">
+                                                    <i class="bi bi-book-fill text-warning fs-2"></i>
+                                                    <h3 class="text-white mt-2">100+</h3>
+                                                    <p class="text-white-50 mb-0">Courses</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="stat-card text-center p-3 bg-white bg-opacity-10 rounded">
+                                                    <i class="bi bi-award-fill text-warning fs-2"></i>
+                                                    <h3 class="text-white mt-2">50+</h3>
+                                                    <p class="text-white-50 mb-0">Awards</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-slide hero-slide-2">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div class="col-lg-8 mx-auto text-center">
+                                    <div class="hero-content text-white">
+                                        <h1 class="display-4 fw-bold mb-4">Modern <span class="text-warning">Facilities</span></h1>
+                                        <p class="fs-5 mb-4">State-of-the-art laboratories, libraries, and sports facilities designed to enhance your learning experience.</p>
+                                        <a href="facilities.html" class="btn btn-warning btn-lg">
+                                            Explore Facilities <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="hero-slide hero-slide-3">
+                        <div class="container">
+                            <div class="row align-items-center min-vh-75">
+                                <div class="col-lg-8 mx-auto text-center">
+                                    <div class="hero-content text-white">
+                                        <h1 class="display-4 fw-bold mb-4">Expert <span class="text-warning">Faculty</span></h1>
+                                        <p class="fs-5 mb-4">Learn from industry experts and renowned professors who are passionate about education and research.</p>
+                                        <a href="faculty.html" class="btn btn-warning btn-lg">
+                                            Meet Our Faculty <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Programs Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary">Featured Programs</h2>
+                    <p class="lead text-muted">Discover our most popular academic programs designed to prepare you for success in your chosen career path.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm program-card">
+                        <div class="card-body text-center">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-laptop text-primary"></i>
+                            </div>
+                            <h5 class="card-title">Computer Science</h5>
+                            <p class="card-text text-muted">Cutting-edge technology programs preparing students for the digital future.</p>
+                            <span class="badge bg-primary mb-3">4 Years</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="courses.html" class="btn btn-outline-primary w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm program-card">
+                        <div class="card-body text-center">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-gear-fill text-success"></i>
+                            </div>
+                            <h5 class="card-title">Engineering</h5>
+                            <p class="card-text text-muted">Innovative engineering programs with hands-on laboratory experience.</p>
+                            <span class="badge bg-success mb-3">4 Years</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="courses.html" class="btn btn-outline-success w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm program-card">
+                        <div class="card-body text-center">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-briefcase-fill text-purple"></i>
+                            </div>
+                            <h5 class="card-title">Business</h5>
+                            <p class="card-text text-muted">Comprehensive business programs with real-world applications.</p>
+                            <span class="badge bg-purple mb-3">3 Years</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="courses.html" class="btn btn-outline-purple w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm program-card">
+                        <div class="card-body text-center">
+                            <div class="program-icon mb-3">
+                                <i class="bi bi-palette-fill text-warning"></i>
+                            </div>
+                            <h5 class="card-title">Liberal Arts</h5>
+                            <p class="card-text text-muted">Broad-based education fostering critical thinking and creativity.</p>
+                            <span class="badge bg-warning mb-3">4 Years</span>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <a href="courses.html" class="btn btn-outline-warning w-100">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="courses.html" class="btn btn-primary btn-lg">View All Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Vista Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold text-primary mb-4">Why Choose Vista College?</h2>
+                    <div class="feature-list">
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3 mt-1"></i>
+                            <div>
+                                <h5>Academic Excellence</h5>
+                                <p class="text-muted mb-0">Rigorous academic programs designed by industry experts</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3 mt-1"></i>
+                            <div>
+                                <h5>Modern Facilities</h5>
+                                <p class="text-muted mb-0">State-of-the-art labs, libraries, and recreational facilities</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3 mt-1"></i>
+                            <div>
+                                <h5>Expert Faculty</h5>
+                                <p class="text-muted mb-0">Learn from renowned professors and industry professionals</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <i class="bi bi-check-circle-fill text-success fs-4 me-3 mt-1"></i>
+                            <div>
+                                <h5>Global Recognition</h5>
+                                <p class="text-muted mb-0">Internationally recognized degrees and certifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="campus-stats p-4 bg-primary rounded text-white">
+                        <h3 class="mb-4">Vista College by Numbers</h3>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold text-warning">50+</h2>
+                                    <p class="mb-0">Years of Excellence</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold text-warning">5,000+</h2>
+                                    <p class="mb-0">Active Students</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold text-warning">300+</h2>
+                                    <p class="mb-0">Faculty Members</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <h2 class="display-6 fw-bold text-warning">25,000+</h2>
+                                    <p class="mb-0">Alumni Worldwide</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-mortarboard-fill fs-2 me-2"></i>
+                        <h4 class="mb-0">Vista College</h4>
+                    </div>
+                    <p class="text-light opacity-75">Empowering minds, shaping futures. Vista College has been a beacon of academic excellence for over five decades.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light opacity-75 text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-light opacity-75 text-decoration-none">Courses</a></li>
+                        <li><a href="faculty.html" class="text-light opacity-75 text-decoration-none">Faculty</a></li>
+                        <li><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <small>123 Education Street, Academic City, AC 12345</small>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <small>+1 (555) 123-4567</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <small>info@vistacollege.edu</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            <div class="text-center">
+                <p class="mb-0 text-light opacity-75">&copy; 2024 Vista College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

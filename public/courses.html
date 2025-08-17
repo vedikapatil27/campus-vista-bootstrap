@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Vista College</title>
+    <meta name="description" content="Explore Vista College's comprehensive range of undergraduate and graduate programs designed to prepare you for success in your chosen career path.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-mortarboard-fill text-primary fs-3 me-2"></i>
+                <span class="fw-bold text-primary fs-4">Vista College</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="departments.html">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-medium" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="faculty.html">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="facilities.html">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1>Our Courses</h1>
+                    <p class="lead">Discover our comprehensive range of undergraduate and graduate programs designed to prepare you for success in your chosen career path.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-4 bg-light border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <button class="btn btn-primary filter-btn active" onclick="filterCourses('all')">All Courses</button>
+                        <button class="btn btn-outline-primary filter-btn" onclick="filterCourses('technology')">Technology</button>
+                        <button class="btn btn-outline-primary filter-btn" onclick="filterCourses('business')">Business</button>
+                        <button class="btn btn-outline-primary filter-btn" onclick="filterCourses('engineering')">Engineering</button>
+                        <button class="btn btn-outline-primary filter-btn" onclick="filterCourses('arts')">Arts</button>
+                        <button class="btn btn-outline-primary filter-btn" onclick="filterCourses('health')">Health</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="coursesContainer">
+                <!-- Computer Science -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="technology">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-primary">Technology</span>
+                                <span class="badge bg-outline-secondary">Undergraduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Bachelor of Computer Science</h5>
+                            <p class="card-text text-muted mb-3">Comprehensive program covering software development, algorithms, and emerging technologies.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 4 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 120 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.8</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-primary">Industry Internships</span>
+                                    <span class="badge bg-light text-primary">Research Projects</span>
+                                    <span class="badge bg-light text-primary">Tech Certifications</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MBA -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="business">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-purple">Business</span>
+                                <span class="badge bg-outline-secondary">Graduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Master of Business Administration</h5>
+                            <p class="card-text text-muted mb-3">Advanced business program focusing on leadership, strategy, and global business practices.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 2 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 60 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.9</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-purple">Case Studies</span>
+                                    <span class="badge bg-light text-purple">Industry Mentorship</span>
+                                    <span class="badge bg-light text-purple">Global Exchange</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="engineering">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-success">Engineering</span>
+                                <span class="badge bg-outline-secondary">Undergraduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Bachelor of Engineering</h5>
+                            <p class="card-text text-muted mb-3">Multi-disciplinary engineering program with specializations in various engineering fields.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 4 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 200 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.7</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-success">Laboratory Work</span>
+                                    <span class="badge bg-light text-success">Industry Projects</span>
+                                    <span class="badge bg-light text-success">Professional Training</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fine Arts -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="arts">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-warning">Arts</span>
+                                <span class="badge bg-outline-secondary">Undergraduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Bachelor of Fine Arts</h5>
+                            <p class="card-text text-muted mb-3">Creative program developing artistic skills and cultural understanding through practical projects.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 3 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 80 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.6</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-warning">Studio Work</span>
+                                    <span class="badge bg-light text-warning">Gallery Exhibitions</span>
+                                    <span class="badge bg-light text-warning">Artist Residencies</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nursing -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="health">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-danger">Health</span>
+                                <span class="badge bg-outline-secondary">Undergraduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Bachelor of Nursing</h5>
+                            <p class="card-text text-muted mb-3">Comprehensive healthcare program combining theoretical knowledge with clinical practice.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 4 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 100 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.8</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-danger">Clinical Rotations</span>
+                                    <span class="badge bg-light text-danger">Simulation Labs</span>
+                                    <span class="badge bg-light text-danger">Community Health</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="col-lg-4 col-md-6 course-item" data-category="technology">
+                    <div class="card program-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <span class="badge bg-primary">Technology</span>
+                                <span class="badge bg-outline-secondary">Graduate</span>
+                            </div>
+                            
+                            <h5 class="card-title">Master of Data Science</h5>
+                            <p class="card-text text-muted mb-3">Advanced program in data analysis, machine learning, and big data technologies.</p>
+                            
+                            <div class="course-info mb-3">
+                                <div class="d-flex align-items-center gap-3 small text-muted">
+                                    <div><i class="bi bi-clock me-1"></i> 2 Years</div>
+                                    <div><i class="bi bi-people me-1"></i> 40 Students</div>
+                                    <div><i class="bi bi-star-fill text-warning me-1"></i> 4.9</div>
+                                </div>
+                            </div>
+                            
+                            <div class="highlights mb-3">
+                                <small class="fw-semibold d-block mb-2">Program Highlights:</small>
+                                <div class="d-flex flex-wrap gap-1">
+                                    <span class="badge bg-light text-primary">Real Projects</span>
+                                    <span class="badge bg-light text-primary">Industry Tools</span>
+                                    <span class="badge bg-light text-primary">Research Thesis</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer bg-transparent">
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-primary flex-fill">Apply Now</button>
+                                <button class="btn btn-outline-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold text-primary text-center mb-5">Admission Requirements</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4">
+                                <h5 class="text-primary"><i class="bi bi-mortarboard me-2"></i>Undergraduate Programs</h5>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>High School Diploma or equivalent</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Minimum GPA of 3.0</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>SAT or ACT scores</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Letters of recommendation</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Personal statement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card h-100 p-4">
+                                <h5 class="text-primary"><i class="bi bi-award me-2"></i>Graduate Programs</h5>
+                                <ul class="list-unstyled mt-3">
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Bachelor's degree from accredited institution</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Minimum GPA of 3.25</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>GRE or GMAT scores (program dependent)</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Professional recommendations</li>
+                                    <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Statement of purpose</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Apply?</h2>
+            <p class="lead mb-4">Join thousands of students who have chosen Vista College to pursue their academic and career goals. Start your application today!</p>
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                <a href="contact.html" class="btn btn-warning btn-lg">Start Application</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg">Download Brochure</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-mortarboard-fill fs-2 me-2"></i>
+                        <h4 class="mb-0">Vista College</h4>
+                    </div>
+                    <p class="text-light opacity-75">Empowering minds, shaping futures. Vista College has been a beacon of academic excellence for over five decades.</p>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light opacity-75 text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-light opacity-75 text-decoration-none">Courses</a></li>
+                        <li><a href="faculty.html" class="text-light opacity-75 text-decoration-none">Faculty</a></li>
+                        <li><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Contact Info</h5>
+                    <div class="contact-info">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            <small>123 Education Street, Academic City, AC 12345</small>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <small>+1 (555) 123-4567</small>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <small>info@vistacollege.edu</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            <div class="text-center">
+                <p class="mb-0 text-light opacity-75">&copy; 2024 Vista College. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Course filtering script -->
+    <script>
+        function filterCourses(category) {
+            const items = document.querySelectorAll('.course-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active', 'btn-primary'));
+            buttons.forEach(btn => btn.classList.add('btn-outline-primary'));
+            event.target.classList.remove('btn-outline-primary');
+            event.target.classList.add('btn-primary', 'active');
+            
+            // Filter items
+            items.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (category === 'all' || itemCategory === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
