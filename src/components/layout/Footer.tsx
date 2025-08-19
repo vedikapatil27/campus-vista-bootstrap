@@ -10,10 +10,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <GraduationCap className="h-8 w-8" />
-              <span className="text-2xl font-bold">Vista College</span>
+              <span className="text-2xl font-bold">DYPSN College</span>
             </div>
             <p className="text-primary-foreground/80 mb-4 max-w-md">
-              Empowering minds, shaping futures. Vista College has been a beacon of academic excellence 
+              Empowering minds, shaping futures. DYPSN College has been a beacon of academic excellence 
               for over five decades, fostering innovation and nurturing the leaders of tomorrow.
             </p>
           </div>
@@ -51,14 +51,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 text-primary-foreground/80">
                 <Mail className="h-4 w-4" />
-                <span className="text-sm">info@vistacollege.edu</span>
+                <span className="text-sm">info@dypsnacollege.edu</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-primary-foreground/60">
-          <p>&copy; 2024 Vista College. All rights reserved.</p>
+          <p>&copy; 2024 DYPSN College. All rights reserved.</p>
         </div>
       </div>
     </footer>

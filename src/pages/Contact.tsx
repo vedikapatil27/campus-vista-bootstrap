@@ -77,19 +77,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: ["+1 (555) 123-4567", "+1 (555) 123-4568 (Admissions)", "Toll Free: 1-800-VISTA-EDU"],
+      details: ["+1 (555) 123-4567", "+1 (555) 123-4568 (Admissions)", "Toll Free: 1-800-DYPSN-EDU"],
       color: "bg-green-500"
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@vistacollege.edu", "admissions@vistacollege.edu", "support@vistacollege.edu"],
+      details: ["info@dypsncollege.edu", "admissions@dypsncollege.edu", "support@dypsncollege.edu"],
       color: "bg-purple-500"
     },
     {
       icon: Clock,
       title: "Office Hours",
-      details: ["Mon - Fri: 8:00 AM - 6:00 PM", "Saturday: 9:00 AM - 4:00 PM", "Sunday: Closed"],
+      details: ["Mon - Sat: 9:15 AM - 4.15:00 PM", "2nd or 3rd Saturday: Closed", "Sunday: Closed"],
       color: "bg-orange-500"
     }
   ];
@@ -98,19 +98,19 @@ const Contact = () => {
     {
       icon: Users,
       title: "Admissions Office",
-      contact: "admissions@vistacollege.edu",
+      contact: "admissions@dypsncollege.edu",
       phone: "+1 (555) 123-4568"
     },
     {
       icon: GraduationCap,
       title: "Academic Affairs", 
-      contact: "academics@vistacollege.edu",
+      contact: "academics@dypsncollege.edu",
       phone: "+1 (555) 123-4569"
     },
     {
       icon: Users,
       title: "Student Services",
-      contact: "students@vistacollege.edu", 
+      contact: "students@dypsncollege.edu", 
       phone: "+1 (555) 123-4570"
     }
   ];
@@ -124,7 +124,7 @@ const Contact = () => {
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
             <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
-              Get in touch with Vista College. We're here to help with admissions, academic inquiries, 
+              Get in touch with DYPSN College. We're here to help with admissions, academic inquiries, 
               and any questions about our programs and services.
             </p>
           </div>
@@ -272,19 +272,25 @@ const Contact = () => {
             
             {/* Google Maps Embed Placeholder */}
             <div className="w-full h-96 bg-muted rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
-                <p className="text-muted-foreground">Interactive Map</p>
-                <p className="text-sm text-muted-foreground">123 Education Street, Academic City, AC 12345</p>
-              </div>
-            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.453001915971!2d74.203844!3d16.6661611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc05552f4000001%3A0x81166eb04377a838!2sD.%20Y.%20Patil%20College%20Of%20Engineering!5e0!3m2!1sen!2sin!4v1692481210000"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen   // ✅ boolean, no value
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+  >         </iframe>
+</div>
+
+
           </div>
         </section>
 
         {/* CTA Section */}
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4">Ready to Join Vista College?</h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Join DYPSN College?</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Take the next step in your educational journey. Contact our admissions team 
               to learn more about our programs and application process.

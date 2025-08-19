@@ -11,9 +11,9 @@ const About = () => {
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-r from-primary to-primary-dark text-primary-foreground">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About Vista College</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About DYPSN College</h1>
             <p className="text-xl max-w-3xl mx-auto text-primary-foreground/90">
-              For over 50 years, Vista College has been committed to providing exceptional education 
+              For over 50 years, DYPSN College has been committed to providing exceptional education 
               and fostering academic excellence in a supportive community environment.
             </p>
           </div>
@@ -71,7 +71,7 @@ const About = () => {
               </CardHeader>
               <CardContent className="text-center">
                 <blockquote className="text-lg text-muted-foreground leading-relaxed italic mb-6">
-                  "At Vista College, we believe that education is not just about acquiring knowledge, 
+                  "At DYPSN College, we believe that education is not just about acquiring knowledge, 
                   but about developing the skills, values, and mindset necessary to thrive in an 
                   ever-changing world. Our dedicated faculty and staff are committed to nurturing 
                   each student's potential and helping them achieve their dreams."
@@ -89,7 +89,7 @@ const About = () => {
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Vista College by Numbers</h2>
+              <h2 className="text-3xl font-bold mb-4">DYPSN College by Numbers</h2>
               <p className="text-muted-foreground">Our achievements speak for themselves</p>
             </div>
             

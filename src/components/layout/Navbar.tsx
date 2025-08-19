@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <GraduationCap className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold text-primary">Vista College</span>
+            <span className="text-xl font-bold text-primary">DYPSN College</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10 text-white">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Welcome to <span className="text-secondary">Vista College</span>
+            Welcome to <span className="text-secondary">DYPSN College</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90">
             Shaping minds, building futures. Experience world-class education 
